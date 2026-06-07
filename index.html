@@ -228,9 +228,10 @@
   </div>
 
   <script>
-    // HubSpot Forms — paste your values from Marketing > Forms (the GUID is not a secret).
-    const HUBSPOT_PORTAL_ID = "YOUR_PORTAL_ID";   // e.g. "12345678"
-    const HUBSPOT_FORM_GUID  = "YOUR_FORM_GUID";  // e.g. "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+    // HubSpot Forms — values from Marketing > Forms (these are not secrets).
+    const HUBSPOT_PORTAL_ID = "246420219";
+    const HUBSPOT_FORM_GUID  = "104fd5f1-4b30-4835-b9b3-c7d833338ce2";
+    const HUBSPOT_REGION     = "na2";  // submission host is api-<region>.hsforms.com
 
     (function () {
       const form = document.getElementById("contact-form");
@@ -267,7 +268,7 @@
         button.textContent = "Sending…";
         setStatus("");
 
-        const url = "https://api.hsforms.com/submissions/v3/integration/submit/" +
+        const url = "https://api-" + HUBSPOT_REGION + ".hsforms.com/submissions/v3/integration/submit/" +
                     HUBSPOT_PORTAL_ID + "/" + HUBSPOT_FORM_GUID;
         const fields = [
           { name: "firstname", value: firstname },
