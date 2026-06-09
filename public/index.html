@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minowa, Inc. — Mobile Healthcare Solutions</title>
+  <meta name="description" content="Minowa, Inc. builds mobile healthcare solutions and related software for clinicians, patients, and care teams.">
+  <meta name="author" content="Minowa, Inc.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://minowa.ai/">
+  <style>
+    :root {
+      --ink: #14202b;
+      --ink-soft: #4a5a6b;
+      --paper: #fbfaf6;
+      --rule: #e3ded1;
+      --accent: #2f6b5e;
+      --accent-ink: #1a3d36;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.55;
+      color: var(--ink);
+      background: var(--paper);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent-ink); text-decoration: underline; text-underline-offset: 2px; }
+    a:hover { color: var(--accent); }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+    header.site {
+      padding: 40px 0 0;
+    }
+    .mark {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 10px;
+      font-weight: 600;
+      font-size: 18px;
+      letter-spacing: 0.02em;
+    }
+    .mark .dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--accent);
+      display: inline-block;
+    }
+
+    .hero {
+      padding: 56px 0 40px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 44px);
+      line-height: 1.15;
+      margin: 0 0 16px;
+      letter-spacing: -0.01em;
+    }
+    .hero p.lede {
+      font-size: 20px;
+      color: var(--ink-soft);
+      margin: 0;
+      max-width: 34em;
+    }
+
+    section {
+      padding: 40px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    section h2 {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent-ink);
+      margin: 0 0 16px;
+    }
+    section p { margin: 0 0 12px; }
+    section p:last-child { margin-bottom: 0; }
+
+    dl.contact {
+      margin: 0;
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 8px 20px;
+    }
+    dl.contact dt {
+      color: var(--ink-soft);
+      font-size: 14px;
+      padding-top: 2px;
+    }
+    dl.contact dd { margin: 0; }
+    dl.contact address { font-style: normal; }
+
+    #hubspot-form { margin: 0 0 24px; max-width: 28em; }
+
+    footer.site {
+      padding: 28px 0 48px;
+      font-size: 14px;
+      color: var(--ink-soft);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    @media (max-width: 480px) {
+      .wrap { padding: 0 20px; }
+      dl.contact { grid-template-columns: 1fr; gap: 2px 0; }
+      dl.contact dt { padding-top: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <span class="mark"><span class="dot" aria-hidden="true"></span>Minowa, Inc.</span>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Mobile healthcare solutions &mdash; and more.</h1>
+      <p class="lede">Minowa, Inc. designs and builds software for clinicians, patients, and the teams that support them, with a focus on mobile-first experiences.</p>
+    </section>
+
+    <section aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>Minowa, Inc. is a privately held software company. We develop mobile applications and supporting services primarily in the healthcare space, along with selected work in adjacent domains where careful engineering and thoughtful product design matter.</p>
+      <p>Our work emphasizes clarity, privacy, and durability &mdash; software that holds up in the hands of real people doing real work.</p>
+    </section>
+
+    <section aria-labelledby="work-title">
+      <h2 id="work-title">What we do</h2>
+      <p>We build iOS and cross-platform mobile applications, the backend services that support them, and the operational tooling that keeps them running. Individual product listings are available on the App Store under the Minowa, Inc. developer name.</p>
+    </section>
+
+    <section aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>For business, press, or support inquiries, send us a note and we&rsquo;ll be in touch.</p>
+      <div id="hubspot-form" class="contact"></div>
+      <dl class="contact">
+        <dt>Mailing address</dt>
+        <dd>
+          <address>
+            Minowa, Inc.<br>
+            945 Taraval St. #1039<br>
+            San Francisco, CA 94116<br>
+            USA
+          </address>
+        </dd>
+      </dl>
+    </section>
+
+    <footer class="site">
+      <span>&copy; 2026 Minowa, Inc. All rights reserved.</span>
+      <span>D-U-N-S&reg; 144996577 &middot; United States</span>
+    </footer>
+  </div>
+
+  <!-- HubSpot form embed (na2 region). The embed renders the form and its
+       reCAPTCHA, submitting through HubSpot's own pipeline. -->
+  <script src="https://js-na2.hsforms.net/forms/embed/v2.js"></script>
+  <script>
+    hbspt.forms.create({
+      region: "na2",
+      portalId: "246420219",
+      formId: "104fd5f1-4b30-4835-b9b3-c7d833338ce2",
+      target: "#hubspot-form"
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "minowa",
+  "compatibility_date": "2026-06-07",
+  "assets": { "directory": "./public" },
+  "routes": [
+    { "pattern": "minowa.ai/*", "zone_name": "minowa.ai" },
+    { "pattern": "www.minowa.ai/*", "zone_name": "minowa.ai" }
+  ]
+}
